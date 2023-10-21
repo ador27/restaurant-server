@@ -11,6 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 
+
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.o3wf1eu.mongodb.net/?retryWrites=true&w=majority`;
 
@@ -36,6 +37,7 @@ async function run() {
     }
 }
 run().catch(console.dir);
+
 
 
 
